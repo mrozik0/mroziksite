@@ -48,15 +48,23 @@
       font-size: 1.5em;
     }
 
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #ff7700;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+a.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff7700;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #ffff;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  border: 2px solid #ffff;
+  border-radius: 0; /* brak zaokrągleń */
+  cursor: pointer;
+  transition: background-color 0.2s;
     }
 
     a.button:hover {
@@ -90,6 +98,28 @@
       font-family: 'Courier New'; 
       color: #ffff;     
     }
+    a.button.płyta {
+  background-color: #000000;
+  color: #ffff;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  border: 2px solid #ffff;
+  border-radius: 0; /* brak zaokrągleń */
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 8px; /* dodane */
+    }
+
+    a.button.płyta:hover {
+      background: #000000;
+    }
+    h5{
+      padding: 0;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
   </style>
 </head>
 <body>
@@ -123,12 +153,19 @@ margin-top: 18px;
     <li>8. </li>
   </ul>
 
-  <a class="button" href="https://soundcloud.com/twojprofil" target="_blank">Słuchaj na SoundCloud</a>
+  <a class="button" href="..."target="_blank">Słuchaj na SoundCloud</a>
   <a class="button red" href="..." target="_blank">Kup płytę online</a>
 
   <h3>*Jeśli chcesz kupić płytę online - to masz problem.</h3>
 
   <h4>*Jeśli chcesz słuchać płyty - to też masz problem.</h4>
+
+<div style="display: flex; align-items: center; gap: 12px; margin-top: 40px;">
+  <p style="margin: 0; padding: 0; font-weight: bold; font-size: 1.5em; font-family: 'Courier New'; color: #ffff;">
+    nie no żartuje.
+  </p>
+  <a class="button płyta" href="..." target="_blank">Kliknij tu</a>
+</div> 
 
 
 
