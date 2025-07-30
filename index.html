@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>mroziksite.</title>
   <style>
+      @keyframes blink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0.3; }
+      100% { opacity: 1; }
     body {
       background-color: #000189;
       font-family: 'Courier New', monospace;
@@ -21,7 +25,7 @@
     h1 {
       text-transform: undercase;
       font-size: 3em;
-      text-shadow: 0 0 5px #f5f5f5, 0 0 10px #f5f5f5, 0 0 20px #f5f5f5;
+      animation: blink 1s infinite;
       border-bottom: 2px solid #f5f5f5;
       padding-bottom: 12px;
     }
